@@ -32,7 +32,7 @@ public class BaseClass {
 		
 		cdp = new ConfigDataProvider();
 		
-		reporter = new ExtentHtmlReporter(new File("C:\\Users\\pankaj.koriya\\eclipse-workspace\\Ecommerce\\Ecommerce\\ExtentReports\\Ecommerce_" + CaptureScreeshot.getDateAndTime()+".html"));
+		reporter = new ExtentHtmlReporter(new File("C:\\Users\\pankaj.koriya\\git\\EcommerceFinalProject\\Ecommerce\\ExtentReports\\Ecommerce_" + CaptureScreeshot.getDateAndTime()+".html"));
 		extent = new ExtentReports();
 		extent.attachReporter(reporter);
 		

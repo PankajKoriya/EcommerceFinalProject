@@ -5,6 +5,7 @@
     <classes>
       <class name="com.ecommerce.testcases.VerifySortByNameOnMobileListPage"/>
       <class name="com.ecommerce.testcases.VerifyCostListAndDetailPage"/>
+      <class name="com.ecommerce.testcases.VerifyInvoicePrinted"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

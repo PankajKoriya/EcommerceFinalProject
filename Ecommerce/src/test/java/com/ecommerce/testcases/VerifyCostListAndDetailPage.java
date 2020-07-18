@@ -2,7 +2,6 @@ package com.ecommerce.testcases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.ecommerce.pages.BaseClass;
 import com.ecommerce.pages.MobileDetailPage;
 import com.ecommerce.pages.MobilePage;

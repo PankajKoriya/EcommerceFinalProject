@@ -16,7 +16,7 @@ public class CaptureScreeshot {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		
-		String dest = "C:\\Users\\pankaj.koriya\\eclipse-workspace\\Ecommerce\\Ecommerce\\Screenshots\\Ecommerce_" + CaptureScreeshot.getDateAndTime() + ".png";
+		String dest = "C:\\Users\\pankaj.koriya\\git\\EcommerceFinalProject\\Ecommerce\\Screenshots\\Ecommerce_" + CaptureScreeshot.getDateAndTime() + ".png";
 		
 		try
 		{
