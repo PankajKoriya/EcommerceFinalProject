@@ -11,7 +11,7 @@ import com.ecommerce.pages.MagentoAdminPanelSitespage;
 public class VerifyInvoicePrinted extends BaseClass{
 	
 	@Test
-	public void printInvoice()
+	public void printInvoice() throws InterruptedException
 	{
 		logger = extent.createTest("Verify invoice can be printed");
 		
@@ -47,6 +47,8 @@ public class VerifyInvoicePrinted extends BaseClass{
 		
 		sitespage.clickOnSearchBtn();
 		
+		Thread.sleep(5000);
+		
 		sitespage.clickOnFirstOrderChk();
 		
 		sitespage.selectFromActions("Print Invoices");
@@ -63,15 +65,24 @@ public class VerifyInvoicePrinted extends BaseClass{
 		
 		sitespage.clickOnSearchBtn();
 		
+		Thread.sleep(5000);
+		
 		sitespage.clickOnFirstOrderChk();
 		
 		sitespage.selectFromActions("Print Invoices");
 		
 		sitespage.clickOnSubmitBtn();
 		
-		boolean fileDownload = sitespage.verifyDownloadedInvoice();
+		String nameOfDownloadedFile = null;
 		
-		Assert.assertTrue(fileDownload);
+		try {
+			nameOfDownloadedFile = sitespage.verifyDownloadedInvoice();
+			
+		} catch (InterruptedException e) {
+			
+			System.out.println(e.getMessage());
+		}
+		Assert.assertTrue(nameOfDownloadedFile.contains("invoice2020-07-19"));	
 	}
 
 }

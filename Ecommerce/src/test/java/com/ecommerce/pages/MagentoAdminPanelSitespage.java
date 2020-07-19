@@ -1,7 +1,6 @@
 package com.ecommerce.pages;
 
 import java.io.File;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -86,19 +85,30 @@ public class MagentoAdminPanelSitespage {
 		return errorMsg.getText();
 	}
 	
-	public boolean verifyDownloadedInvoice()
+	public String verifyDownloadedInvoice() throws InterruptedException
 	{
-		File f = new File("C:\\Users\\pankaj.koriya\\Downloads");
-
-		if(f.exists() && f.length() == 1506000)
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
+		Thread.sleep(10000);
+	     File getLatestFile = getLatestFilefromDir("C:\\Users\\pankaj.koriya\\Downloads");
+	     String fileName = getLatestFile.getName();
+	     return fileName;
+	     
 	}
+	private File getLatestFilefromDir(String dirPath){
+	    File dir = new File(dirPath);
+	    File[] files = dir.listFiles();
+	    if (files == null || files.length == 0) {
+	        return null;
+	    }
+
+	    File lastModifiedFile = files[0];
+	    for (int i = 1; i < files.length; i++) {
+	       if (lastModifiedFile.lastModified() < files[i].lastModified()) {
+	           lastModifiedFile = files[i];
+	       }
+	    }
+	    return lastModifiedFile;
+	}
+}
 	
 
-}
+
