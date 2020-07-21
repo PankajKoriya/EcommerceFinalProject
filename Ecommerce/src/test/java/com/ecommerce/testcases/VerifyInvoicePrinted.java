@@ -7,6 +7,7 @@ import com.ecommerce.pages.BackendLoginPage;
 import com.ecommerce.pages.BaseClass;
 import com.ecommerce.pages.MagentoAdminPanelHomePage;
 import com.ecommerce.pages.MagentoAdminPanelSitespage;
+import com.ecommerce.utilities.CaptureScreeshot;
 
 public class VerifyInvoicePrinted extends BaseClass{
 	
@@ -82,7 +83,10 @@ public class VerifyInvoicePrinted extends BaseClass{
 			
 			System.out.println(e.getMessage());
 		}
-		Assert.assertTrue(nameOfDownloadedFile.contains("invoice2020-07-19"));	
+		
+		String date = CaptureScreeshot.getDate();
+		
+		Assert.assertTrue(nameOfDownloadedFile.contains("invoice" + date));	
 	}
 
 }

@@ -33,9 +33,16 @@ public class CaptureScreeshot {
 	public static String getDateAndTime()
 	{
 		Date date = new Date();
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy_MM_dd_hh_mm_ss");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd_hh_mm_ss");
 		String formattedDate = sdf.format(date);
 		return formattedDate;
+	}
+	
+	public static String getDate()
+	{
+		Date date = new Date();
+		SimpleDateFormat sdt = new SimpleDateFormat("yyyy-MM-dd");
+		return sdt.format(date);
 	}
 
 }
