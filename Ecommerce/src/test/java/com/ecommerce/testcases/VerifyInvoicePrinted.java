@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import com.ecommerce.pages.BackendLoginPage;
 import com.ecommerce.pages.BaseClass;
 import com.ecommerce.pages.MagentoAdminPanelHomePage;
-import com.ecommerce.pages.MagentoAdminPanelSitespage;
+import com.ecommerce.pages.MagentoAdminPanelSalespage;
 import com.ecommerce.utilities.CaptureScreeshot;
 
 public class VerifyInvoicePrinted extends BaseClass{
@@ -20,7 +20,7 @@ public class VerifyInvoicePrinted extends BaseClass{
 		
 		MagentoAdminPanelHomePage homePage = PageFactory.initElements(driver, MagentoAdminPanelHomePage.class);
 		
-		MagentoAdminPanelSitespage sitespage = PageFactory.initElements(driver, MagentoAdminPanelSitespage.class);
+		MagentoAdminPanelSalespage sitespage = PageFactory.initElements(driver, MagentoAdminPanelSalespage.class);
 		
 		bloginPage.navigateToBackendLoginPage();
 		
@@ -40,9 +40,9 @@ public class VerifyInvoicePrinted extends BaseClass{
 		
 		homePage.closePopup();
 		
-		sitespage.MoveCursorToSites();
+		homePage.MoveCursorToSites();
 		
-		sitespage.clickOnOrdersMenu();
+		homePage.clickOnOrdersMenu();
 		
 		sitespage.selectFromStatusdd("Canceled");
 		

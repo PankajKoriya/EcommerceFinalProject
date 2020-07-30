@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ecommerce.testcases.VerifyInvoicePrinted">
+      <class name="com.ecommerce.testcases.VerifyProductReviewMechanism">
         <methods>
           <include name="setUp"/>
           <include name="OpenApplication"/>
           <include name="closeBrowser"/>
-          <include name="printInvoice"/>
           <include name="testResult"/>
+          <include name="productReviewMechanism"/>
         </methods>
-      </class> <!-- com.ecommerce.testcases.VerifyInvoicePrinted -->
+      </class> <!-- com.ecommerce.testcases.VerifyProductReviewMechanism -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

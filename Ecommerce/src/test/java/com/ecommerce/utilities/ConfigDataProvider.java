@@ -6,7 +6,7 @@ import java.util.Properties;
 
 public class ConfigDataProvider {
 	
-	Properties pro;
+	static Properties pro;
 	
 		public ConfigDataProvider()
 		{
@@ -22,7 +22,7 @@ public class ConfigDataProvider {
 				System.out.println(e.getMessage());
 			}
 		}
-		public String getValue(String keyToSearch)
+		public static String getValue(String keyToSearch)
 		{
 			return pro.getProperty(keyToSearch);
 		}

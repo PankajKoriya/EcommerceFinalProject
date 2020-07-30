@@ -44,7 +44,7 @@ public class BaseClass {
 	{
 		Reporter.log("Open browser setup is started",true);
 		
-		driver = StartApplication.OpenBrowser(driver, "chrome", "http://live.demoguru99.com/index.php/");
+		driver = StartApplication.OpenBrowser(driver, "chrome", ConfigDataProvider.getValue("appUrl"));
 		
 		Reporter.log("Browser is opened",true);
 	}

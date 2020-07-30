@@ -9,12 +9,9 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
-public class MagentoAdminPanelSitespage {
+public class MagentoAdminPanelSalespage {
 	
 	WebDriver driver;
-	
-	@FindBy(how = How.XPATH , using="(//ul[@id='nav']/li/ul/li/a)[1]")
-	WebElement ordersMenu;
 	
 	@FindBy(how=How.ID,using="sales_order_grid_filter_status")
 	WebElement statusDropdown;
@@ -34,23 +31,9 @@ public class MagentoAdminPanelSitespage {
 	@FindBy(how=How.XPATH, using="//div[@id='messages']/ul/li/ul/li/span")
 	WebElement errorMsg;
 	
-	@FindBy(how=How.XPATH, using="(//ul[@id='nav']/li/a)[1]")
-	WebElement siteMenu;
-	
-	
-	public MagentoAdminPanelSitespage(WebDriver ldriver)
+	public MagentoAdminPanelSalespage(WebDriver ldriver)
 	{
 		this.driver=ldriver;
-	}
-	
-	public void MoveCursorToSites()
-	{
-		Actions action = new Actions(driver);
-		action.moveToElement(siteMenu).perform();
-	}
-	public void clickOnOrdersMenu()
-	{
-		ordersMenu.click();
 	}
 	
 	public void selectFromStatusdd(String status)

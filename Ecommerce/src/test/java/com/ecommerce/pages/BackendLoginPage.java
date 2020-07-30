@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import com.ecommerce.utilities.ConfigDataProvider;
+
 public class BackendLoginPage {
 	
 	WebDriver driver;
@@ -19,7 +21,7 @@ public class BackendLoginPage {
 	
 	public void navigateToBackendLoginPage()
 	{
-		driver.get("http://live.demoguru99.com/index.php/backendlogin");
+		driver.get(ConfigDataProvider.getValue("backendLoginUrl"));
 	}
 	
 	public void enterUsername(String uName)

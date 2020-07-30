@@ -20,12 +20,12 @@
       <![CDATA[Browser is closed]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="76236" started-at="2020-07-21T11:11:31 IST" finished-at="2020-07-21T11:12:47 IST">
+  <suite name="Default suite" duration-ms="39949" started-at="2020-07-26T20:19:26 IST" finished-at="2020-07-26T20:20:06 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="76236" started-at="2020-07-21T11:11:31 IST" finished-at="2020-07-21T11:12:47 IST">
-      <class name="com.ecommerce.testcases.VerifyInvoicePrinted">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ecommerce.testcases.VerifyInvoicePrinted@4c402120]" name="setUp" is-config="true" duration-ms="205" started-at="2020-07-21T11:11:31 IST" finished-at="2020-07-21T11:11:31 IST">
+    <test name="Default test" duration-ms="39949" started-at="2020-07-26T20:19:26 IST" finished-at="2020-07-26T20:20:06 IST">
+      <class name="com.ecommerce.testcases.VerifyProductReviewMechanism">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ecommerce.testcases.VerifyProductReviewMechanism@64729b1e]" name="setUp" is-config="true" duration-ms="191" started-at="2020-07-26T20:19:26 IST" finished-at="2020-07-26T20:19:26 IST">
           <reporter-output>
             <line>
               <![CDATA[Test suite setup is started]]>
@@ -35,7 +35,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="OpenApplication()[pri:0, instance:com.ecommerce.testcases.VerifyInvoicePrinted@4c402120]" name="OpenApplication" is-config="true" duration-ms="10475" started-at="2020-07-21T11:11:31 IST" finished-at="2020-07-21T11:11:41 IST">
+        <test-method status="PASS" signature="OpenApplication()[pri:0, instance:com.ecommerce.testcases.VerifyProductReviewMechanism@64729b1e]" name="OpenApplication" is-config="true" duration-ms="10238" started-at="2020-07-26T20:19:26 IST" finished-at="2020-07-26T20:19:37 IST">
           <reporter-output>
             <line>
               <![CDATA[Open browser setup is started]]>
@@ -45,15 +45,15 @@
             </line>
           </reporter-output>
         </test-method> <!-- OpenApplication -->
-        <test-method status="PASS" signature="printInvoice()[pri:0, instance:com.ecommerce.testcases.VerifyInvoicePrinted@4c402120]" name="printInvoice" duration-ms="63755" started-at="2020-07-21T11:11:42 IST" finished-at="2020-07-21T11:12:45 IST">
+        <test-method status="PASS" signature="productReviewMechanism()[pri:0, instance:com.ecommerce.testcases.VerifyProductReviewMechanism@64729b1e]" name="productReviewMechanism" duration-ms="27258" started-at="2020-07-26T20:19:37 IST" finished-at="2020-07-26T20:20:04 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printInvoice -->
-        <test-method status="PASS" signature="testResult(org.testng.ITestResult)[pri:0, instance:com.ecommerce.testcases.VerifyInvoicePrinted@4c402120]" name="testResult" is-config="true" duration-ms="1108" started-at="2020-07-21T11:12:45 IST" finished-at="2020-07-21T11:12:46 IST">
+        </test-method> <!-- productReviewMechanism -->
+        <test-method status="PASS" signature="testResult(org.testng.ITestResult)[pri:0, instance:com.ecommerce.testcases.VerifyProductReviewMechanism@64729b1e]" name="testResult" is-config="true" duration-ms="1437" started-at="2020-07-26T20:20:04 IST" finished-at="2020-07-26T20:20:05 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=printInvoice status=SUCCESS method=VerifyInvoicePrinted.printInvoice()[pri:0, instance:com.ecommerce.testcases.VerifyInvoicePrinted@4c402120] output={null}]]]>
+                <![CDATA[[TestResult name=productReviewMechanism status=SUCCESS method=VerifyProductReviewMechanism.productReviewMechanism()[pri:0, instance:com.ecommerce.testcases.VerifyProductReviewMechanism@64729b1e] output={null}]]]>
               </value>
             </param>
           </params>
@@ -63,14 +63,14 @@
             </line>
           </reporter-output>
         </test-method> <!-- testResult -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.ecommerce.testcases.VerifyInvoicePrinted@4c402120]" name="closeBrowser" is-config="true" duration-ms="842" started-at="2020-07-21T11:12:46 IST" finished-at="2020-07-21T11:12:47 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.ecommerce.testcases.VerifyProductReviewMechanism@64729b1e]" name="closeBrowser" is-config="true" duration-ms="964" started-at="2020-07-26T20:20:05 IST" finished-at="2020-07-26T20:20:06 IST">
           <reporter-output>
             <line>
               <![CDATA[Browser is closed]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.ecommerce.testcases.VerifyInvoicePrinted -->
+      </class> <!-- com.ecommerce.testcases.VerifyProductReviewMechanism -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
