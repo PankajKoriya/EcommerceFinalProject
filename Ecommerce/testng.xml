@@ -6,7 +6,7 @@
       <class name="com.ecommerce.testcases.VerifySortByNameOnMobileListPage"/>
       <class name="com.ecommerce.testcases.VerifyCostListAndDetailPage"/>
       <class name="com.ecommerce.testcases.VerifyInvoicePrinted"/>
-      
+      <class name="com.ecommerce.testcases.VerifyProductReviewMechanism"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
