@@ -16,7 +16,7 @@ import com.ecommerce.pages.MagentoAdminPanelInvoicesPage;
 public class VerifySortingForInvoiceDateColumn extends BaseClass{
 	
 	@Test
-	public void verifySort() throws ParseException
+	public void verifySort() throws ParseException, InterruptedException
 	{
 		logger = extent.createTest("Verify Invoice date column sorting");
 		
@@ -45,7 +45,7 @@ public class VerifySortingForInvoiceDateColumn extends BaseClass{
 		
 		Date date2 = sdf2.parse(sdate2);
 		
-		if(date1.after(date2))
+		if(date1.compareTo(date2)>=0)
 		{
 			Assert.assertTrue(true);
 		}
@@ -54,7 +54,11 @@ public class VerifySortingForInvoiceDateColumn extends BaseClass{
 			Assert.assertTrue(false);
 		}
 		
+		Thread.sleep(2000);
+		
 		mapip.clickOnInvoicesDatecolumn();
+		
+		Thread.sleep(2000);
 		
 		String sdate3 = mapip.getInvoiceDateColumnFirstCellValue();
 		
@@ -68,7 +72,9 @@ public class VerifySortingForInvoiceDateColumn extends BaseClass{
 		
 		Date date4 = sdf4.parse(sdate4);
 		
-		if(date3.before(date2))
+		Thread.sleep(2000);
+		
+		if(date3.compareTo(date4)<0)
 		{
 			Assert.assertTrue(true);
 		}

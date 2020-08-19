@@ -5,6 +5,8 @@ import java.sql.Date;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.ecommerce.utilities.ExplicitWait;
+
 public class MagentoAdminPanelInvoicesPage {
 	
 	WebDriver driver;
@@ -24,11 +26,13 @@ public class MagentoAdminPanelInvoicesPage {
 	
 	public String getInvoiceDateColumnFirstCellValue()
 	{
+		ExplicitWait.waitForElement(driver, driver.findElement(invoiceDateColumnFirstCell));
 		return driver.findElement(invoiceDateColumnFirstCell).getText();
 	}
 	
 	public String getInvoiceDateColumnSecondCellValue()
 	{
+		ExplicitWait.waitForElement(driver, driver.findElement(invoiceDateColumnSecondCell));
 		return driver.findElement(invoiceDateColumnSecondCell).getText();
 	}
 
