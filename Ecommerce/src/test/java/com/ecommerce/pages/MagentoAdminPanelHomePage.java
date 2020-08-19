@@ -13,8 +13,11 @@ public class MagentoAdminPanelHomePage {
 	@FindBy(how = How.XPATH , using="(//ul[@id='nav']/li/ul/li/a)[1]")
 	WebElement ordersMenu;
 	
-	@FindBy(how=How.XPATH, using="(//ul[@id='nav']/li/a)[1]")
-	WebElement siteMenu;
+	@FindBy(how=How.XPATH, using="(//ul[@id='nav']/li/a/span)[1]")
+	WebElement salesMenu;
+	
+	@FindBy(how=How.XPATH, using = "//ul[@id='nav']/li/ul/li[2]/a/span")
+	WebElement invoicesMenu;
 	
 	@FindBy(how = How.XPATH, using="//a[@title='close']")
 	WebElement closeBtn;
@@ -46,16 +49,19 @@ public class MagentoAdminPanelHomePage {
 		closeBtn.click();
 	}
 	
-	public void MoveCursorToSites()
+	public void MoveCursorToSales()
 	{
 		Actions action = new Actions(driver);
-		action.moveToElement(siteMenu).perform();
+		action.moveToElement(salesMenu).perform();
 	}
 	public void clickOnOrdersMenu()
 	{
 		ordersMenu.click();
 	}
-	
+	public void clickOnInvoicesMenu()
+	{
+		invoicesMenu.click();
+	}
 	public void moveCursorToCatalog()
 	{
 		Actions action = new Actions(driver);

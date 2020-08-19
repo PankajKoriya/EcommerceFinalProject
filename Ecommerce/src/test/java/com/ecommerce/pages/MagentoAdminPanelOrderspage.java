@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.Select;
 
-public class MagentoAdminPanelSalespage {
+public class MagentoAdminPanelOrderspage {
 	
 	WebDriver driver;
 	
@@ -29,7 +29,7 @@ public class MagentoAdminPanelSalespage {
 	@FindBy(how=How.XPATH, using="//div[@id='messages']/ul/li/ul/li/span")
 	WebElement errorMsg;
 	
-	public MagentoAdminPanelSalespage(WebDriver ldriver)
+	public MagentoAdminPanelOrderspage(WebDriver ldriver)
 	{
 		this.driver=ldriver;
 	}

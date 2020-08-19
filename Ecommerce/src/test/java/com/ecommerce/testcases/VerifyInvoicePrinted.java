@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import com.ecommerce.pages.BackendLoginPage;
 import com.ecommerce.pages.BaseClass;
 import com.ecommerce.pages.MagentoAdminPanelHomePage;
-import com.ecommerce.pages.MagentoAdminPanelSalespage;
+import com.ecommerce.pages.MagentoAdminPanelOrderspage;
 import com.ecommerce.utilities.CaptureScreeshot;
 
 public class VerifyInvoicePrinted extends BaseClass{
@@ -20,7 +20,7 @@ public class VerifyInvoicePrinted extends BaseClass{
 		
 		MagentoAdminPanelHomePage homePage = PageFactory.initElements(driver, MagentoAdminPanelHomePage.class);
 		
-		MagentoAdminPanelSalespage sitespage = PageFactory.initElements(driver, MagentoAdminPanelSalespage.class);
+		MagentoAdminPanelOrderspage sitespage = PageFactory.initElements(driver, MagentoAdminPanelOrderspage.class);
 		
 		bloginPage.navigateToBackendLoginPage();
 		
@@ -40,7 +40,7 @@ public class VerifyInvoicePrinted extends BaseClass{
 		
 		homePage.closePopup();
 		
-		homePage.MoveCursorToSites();
+		homePage.MoveCursorToSales();
 		
 		homePage.clickOnOrdersMenu();
 		

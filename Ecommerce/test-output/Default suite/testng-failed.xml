@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ecommerce.testcases.VerifyProductReviewMechanism">
+      <class name="com.ecommerce.testcases.VerifySortingForInvoiceDateColumn">
         <methods>
+          <include name="verifySort"/>
           <include name="setUp"/>
           <include name="OpenApplication"/>
           <include name="closeBrowser"/>
           <include name="testResult"/>
-          <include name="productReviewMechanism"/>
         </methods>
-      </class> <!-- com.ecommerce.testcases.VerifyProductReviewMechanism -->
+      </class> <!-- com.ecommerce.testcases.VerifySortingForInvoiceDateColumn -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
