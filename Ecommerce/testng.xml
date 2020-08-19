@@ -7,6 +7,8 @@
       <class name="com.ecommerce.testcases.VerifyCostListAndDetailPage"/>
       <class name="com.ecommerce.testcases.VerifyInvoicePrinted"/>
       <class name="com.ecommerce.testcases.VerifyProductReviewMechanism"/>
+      <class name="com.ecommerce.testcases.VerifySortingForInvoiceDateColumn"/>
+      <class name="com.ecommerce.testcases.ReadExcelFile"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
